@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Git Basics</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <h1>Version Control with Git and GitHub</h1>
+      <img src="./assets/images/git-vs-github.png" alt="Git and GitHub logos">
+    </header>
+    <main>
+      <p>
+        <strong>Git</strong> is a local tool to version control projects which
+        are organised in repositories.
+      </p>
+      <ol>
+        <li class="marked">
+          <p>
+            <a href="https://git-scm.com/downloads">Download Git</a> and check installation running
+            <code>git --version</code> in the Terminal or Command Prompt
+          </p>
+        </li>
+        <li>
+          <p><code>git init</code> to initialise repository</p>
+        </li>
+        <li>
+          <p><code>git status</code> status of the repository</p>
+        </li>
+        <li>
+          <p><code>git add file_name</code> add changes to be committed</p>
+        </li>
+        <li>
+          <p>
+            <code>git commit -m "commit comment..."</code> snapshots of the code
+          </p>
+        </li>
+        <li>
+          <p>
+            <code>git config --global user.name "&ltusername&gt"</code> edit
+            username. Same with user.email
+          </p>
+        </li>
+        <li>
+          <p>
+            <code>git log</code> show all commits done by branch and username
+          </p>
+        </li>
+        <li>
+          <p>
+            <code>git branch -m branch_name</code> change name of the current
+            branch
+          </p>
+        </li>
+        <li>
+          <p>
+            <code>git branch -b branch_name</code> add a new branch based on the
+            main branch
+          </p>
+        </li>
+        <li>
+          <p>
+            <code>git checkout branch_name</code> change branch to branch_name
+          </p>
+        </li>
+        <li>
+          <p>
+            <code>git merge branch_name</code> merge the current branch with
+            branch_name branch
+          </p>
+        </li>
+        <li>
+          <p><code>git rm file_name</code> remove file</p>
+        </li>
+        <li>
+          <p>
+            <code>git reset --hard HEAD~1</code> reset first commit from HEAD
+          </p>
+        </li>
+        <li>
+          <p>
+            <code>git branch -D branch_name</code> files deleted from that
+            branch are back
+          </p>
+        </li>
+        <li>
+          <p>
+            <code>git checkout --.</code> reverts a git add as it goes to latest
+            commit but delete all the changes in file. If we want to keep the
+            modifications in addition to revert added file, then
+            <code>git reset file</code>
+          </p>
+        </li>
+      </ol>
+      <p>
+        <a href="https://github.com"><strong>GitHub</strong></a> is a cloud based hosting provider for Git
+        repositories. It allows collaboration in and contributions to Web
+        Developer's projects
+      </p>
+      <ol>
+        <li>
+          <p><code>git remote add origin &ltURL&gt</code></p>
+        </li>
+        <li>
+          <p>
+            <code>git push origin main</code> brings the local git repository to
+            the remote repository in GitHub
+          </p>
+        </li>
+        <li>
+          <p>
+            <code>git pull</code> to update the whole repository into the local
+            machine (Collaborations)
+          </p>
+        </li>
+        <li>
+          <p>
+            <code>git clone &ltURL&gt</code> clone a repository to the local
+            machine
+          </p>
+        </li>
+        <li class="marked">
+          <p>
+            A Personal Access Token is needed to push to the remote repository
+            from local machine
+          </p>
+        </li>
+        <li class="marked">
+          <p>GitHub Contributions: Fork, change/add code, and Pull Request</p>
+        </li>
+      </ol>
+    </main>
+  </body>
+</html>
