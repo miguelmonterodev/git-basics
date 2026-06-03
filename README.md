@@ -21,5 +21,17 @@ ssh-keygen -t ed25519
 ```
 Log into GitHub and click on your profile picture in the top right corner. Then, click on Settings.
 SSH and GPG keys >> New SSH Key >> Copy your public SSH key ```cat ~/.ssh/id_ed25519.pub``` >> Paste the key as Authentication Key and then, click Add SSH key.
-
-
+## Basic Git Workflow
+Connect the repository you created on GitHub to your local machine:
+```Bash
+git clone git@github.com:USER-NAME/REPOSITORY-NAME.git
+```
+Create a new file (ex: index.html)
+```Bash
+git status
+git add index.html
+git commit -m "Create index.html"
+git status #Nothing to commit
+git push origin main
+```
+Look at the output with ```git log```. Just press "q" to escape.
